@@ -13,6 +13,7 @@ import com.patientportal.demo.model.ProviderInput;
 import com.patientportal.demo.model.User;
 import com.patientportal.demo.model.UserInput;
 import com.patientportal.demo.repository.PatientPortalRepository;
+import com.patientportal.demo.service.PatientPortalService;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -21,6 +22,9 @@ public class PatientPortalController {
 	
 	@Autowired(required=true)
 	PatientPortalRepository patientPortalRepository;
+	
+	@Autowired(required=true)
+	PatientPortalService patientPortalService;
 	
 	@PostMapping("/userappointments")
 	public ResponseEntity<?> createTutorial(@RequestBody UserInput userInput) {
@@ -44,14 +48,11 @@ public class PatientPortalController {
 //			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 //		}
 	}
-	
-	@PostMapping("/createUser")
-	public ResponseEntity<?> createUser(@RequestBody User user) {
-	
-//		
-	}
-	
-	
-	
+
+	  @PostMapping("/addProduct")
+	    public User addProduct(@RequestBody User user) {
+	        return patientPortalService.saveUser(user);
+
+	    }
 	
 }
