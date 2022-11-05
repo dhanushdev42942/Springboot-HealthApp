@@ -31,16 +31,19 @@ public class PatientPortalController {
 	
 	@PostMapping("/userappointments")
 	public ResponseEntity<?> createTutorial(@RequestBody UserInput userInput) {
+		return null;
 		
 	}
 	
 	@PostMapping("/providers")
 	public ResponseEntity<?> createTutorial(@RequestBody ProviderInput providerInput) {
+		return null;
 		
 	}
 	
 	@PostMapping("/appointment")
 	public ResponseEntity<?> createTutorial(@RequestBody AppointmentInput appointmentdetails) {
+		return null;
 //		try {
 //			Appointment appointment = 
 //			return new ResponseEntity<>(, HttpStatus.CREATED);
@@ -50,7 +53,8 @@ public class PatientPortalController {
 	}
 	
 	@PostMapping("/createUser")
-	public ResponseEntity<?> createTutorial(@RequestBody AppointmentInput appointmentdetails) {
+	public ResponseEntity<?> createTutorial(@RequestBody User user) {
+		return null;
 //		try {
 //			Appointment appointment = 
 //			return new ResponseEntity<>(, HttpStatus.CREATED);
