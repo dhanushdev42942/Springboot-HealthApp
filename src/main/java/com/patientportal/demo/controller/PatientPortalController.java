@@ -48,4 +48,18 @@ public class PatientPortalController {
 //			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 //		}
 	}
+	
+	@PostMapping("/createUser")
+	public ResponseEntity<?> createTutorial(@RequestBody AppointmentInput appointmentdetails) {
+//		try {
+//			Appointment appointment = 
+//			return new ResponseEntity<>(, HttpStatus.CREATED);
+//		} catch (Exception e) {
+//			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+//		}
+	}
+	
+	
+	
+	
 }
