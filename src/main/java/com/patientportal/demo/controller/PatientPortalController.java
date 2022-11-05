@@ -49,7 +49,7 @@ public class PatientPortalController {
 //		}
 	}
 
-	  @PostMapping("/addProduct")
+	  @PostMapping("/addUser")
 	    public User addProduct(@RequestBody User user) {
 	        return patientPortalService.saveUser(user);
 
