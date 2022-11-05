@@ -24,9 +24,9 @@ public class User {
 
 	@Id
 
-	 @GeneratedValue
+	@GeneratedValue
 
-	 int userId;
+	int userId;
 
 	String firstName;
 
@@ -42,7 +42,7 @@ public class User {
 
 	String gender;
 
-	 int phoneNumber;
+	int phoneNumber;
 
 	String street;
 
@@ -50,5 +50,5 @@ public class User {
 
 	String state;
 
-	 int zipCode;
+	int zipCode;
 }

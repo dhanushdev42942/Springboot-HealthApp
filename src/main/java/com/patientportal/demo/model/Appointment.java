@@ -28,23 +28,15 @@ public class Appointment {
 
 	int userId;
 
-	 int doctorId;
+	int doctorId;
 
-	 int providerId;
-
-	 
+	int providerId;
 
 	String date;
 
 	String startTime;
 
 	String endTime;
-
-	 
-
-	 
-
-	 
 
 	String status;
 
