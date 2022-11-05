@@ -14,6 +14,6 @@ public class Doctor {
 
 	int userId;
 
-	int speciality;
+	int spclId;
 
 }
