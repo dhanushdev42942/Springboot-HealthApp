@@ -15,15 +15,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Affiliation {
 
- @Id
- @GeneratedValue
- int affiliationId;
+	@Id
+	@GeneratedValue
+	int affiliationId;
 
- int providerId;
+	int providerId;
 
- int doctorId;
+	int doctorId;
 
-String isActive;
-
+	String isActive;
 
 }

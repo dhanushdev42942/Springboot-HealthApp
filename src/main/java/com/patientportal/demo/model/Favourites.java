@@ -2,7 +2,7 @@ package com.patientportal.demo.model;
 
 import javax.persistence.GeneratedValue;
 
-import org.hibernate.annotations.Entity;
+import javax.persistence.Entity;
 import org.springframework.data.annotation.Id;
 
 import lombok.AllArgsConstructor;
@@ -15,16 +15,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Favourites {
 
- @Id
+	@Id
 
- @GeneratedValue
+	@GeneratedValue
 
- int favouriteId;
+	int favouriteId;
 
- int userId;
+	int userId;
 
- int doctorId;
+	int doctorId;
 
-String isActive;
+	String isActive;
 
 }

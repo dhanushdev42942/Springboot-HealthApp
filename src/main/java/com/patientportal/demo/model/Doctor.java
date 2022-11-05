@@ -14,6 +14,6 @@ public class Doctor {
 
 	int userId;
 
-	 String speciality;
+	String speciality;
 
-	}
+}

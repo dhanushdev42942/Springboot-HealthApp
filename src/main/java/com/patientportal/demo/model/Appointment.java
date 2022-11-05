@@ -1,32 +1,53 @@
 package com.patientportal.demo.model;
 
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
+
 import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
+
 import lombok.Data;
+
 import lombok.NoArgsConstructor;
 
 @Entity
 
 @Data
 
+@AllArgsConstructor
+
 @NoArgsConstructor
 
-@AllArgsConstructor
-public class Provider {
+public class Appointment {
+
 	@Id
+
 	@GeneratedValue
-	int providerId;
 
-	String providerName;
+	int userId;
 
-	String street;
+	 int doctorId;
 
-	String city;
+	 int providerId;
 
-	String state;
+	 
 
-	String zipCode;
+	String date;
+
+	String startTime;
+
+	String endTime;
+
+	 
+
+	 
+
+	 
+
+	String status;
+
+	String notes;
 
 }
